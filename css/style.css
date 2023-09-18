@@ -7,3 +7,50 @@
 img {
     max-width: 100%;
 }
+
+:root {
+    --background_header: rgb(173 216 230);
+    --background_blue: rgb(0 0 139);
+    --background_grey: rgb(211 211 211);
+    --background_pink: rgb(255 192 203);
+    --background_ciano: rgb(30 144 255);
+    --background_darkgrey:  rgb(35 39 42);
+    --background_acqua: r: rgb(32 178 170);
+}
+
+header {
+    background-color: var(--background_header);
+    padding: 1rem;
+}
+
+.center_body {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.center_body > * {
+    border: 2px dashed black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header > div {
+    background-color: orange;
+    padding: .5rem;
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link_header {
+    display: flex;
+    justify-content: center;
+}
+
+.link_header > li > a {
+    margin: 0 .3rem;
+}
+
