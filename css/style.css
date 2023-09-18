@@ -49,6 +49,11 @@ header > div {
     justify-content: space-between;
 }
 
+header > div > div {
+    border: 2px dashed black;
+    height: 100%;
+}
+
 main > div {
     padding: 1rem 0;
 }
@@ -62,16 +67,16 @@ main > div {
 }
 
 .sub_header {
-    height: 300px;
+    min-height: 300px;
     background-color: var(--background_blue);
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .sub_header > div {
     background-color: var(--background_violet);
     width: 50%;
     margin: 0 auto;
-    min-height: 240px;
+    height: 240px;
     border: 2px dashed black;
 }
 
@@ -93,8 +98,46 @@ main > div {
     height: 500px;
 }
 
-.footer_1 {
+.footer {
     background-color: var(--background_darkgrey);
-    height: 300px;
     padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.footer > div {
+    border: 2px dashed black;
+}
+
+.footer > div > div {
+    height: 240px;
+    width: calc(100% / 6);
+}
+
+.footer_minor {
+    border: 2px dashed white;
+    background-color: var(--background_acqua);
+}
+
+#footer_major {
+    flex-grow: 4;
+    background-color: var(--background_pink);
+    border: 2px dashed black;
+}
+
+footer {
+    background-color: var(--background_darkgrey);
+    padding-top: 1.5rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+footer > div {
+    background-color: var(--background_acqua);
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+
+footer > div > span {
+    border: 2px dashed black;
+    background-color: var(--background_pink);
 }
