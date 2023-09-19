@@ -19,23 +19,30 @@ img {
     --background_violet: rgb(255, 46, 255);
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
 header {
     background-color: var(--background_header);
     padding: .8rem 0;
 }
 
 .head {
-    align-items: center;
     background-color: orange;
     border: 2px dashed black;
     justify-content: space-between;
 }
 
 .head > div {
-    border-style: none;
-    margin: 0 1rem;
     line-height: 2rem;
+    width: 20%;
 }
+
+.head > div:nth-child(2) {
+    width: 60%;
+  }
 
 .center_body {
     width: 65%;
@@ -44,11 +51,6 @@ header {
 
 .center_body > * {
     border: 2px dashed black;
-}
-
-.flex {
-    display: flex;
-    flex-direction: row;
 }
 
 ul {
