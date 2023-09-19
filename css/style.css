@@ -33,20 +33,24 @@ header {
     background-color: orange;
     border: 2px dashed black;
     justify-content: space-between;
+    align-items: center;
+    height: 3rem;
 }
 
 .head > div {
-    line-height: 2rem;
+    line-height: 3rem;
     width: 20%;
+    padding: 0 1rem;
 }
 
 .head > div:nth-child(2) {
-    width: 60%;
-  }
+    flex-grow: 1;
+}
 
 .center_body {
     width: 65%;
     margin: 0 auto;
+    max-width: 1000px;
 }
 
 .center_body > * {
@@ -55,6 +59,10 @@ header {
 
 ul {
     list-style-type: none;
+}
+
+.link {
+    text-align: right;
 }
 
 main > div {
